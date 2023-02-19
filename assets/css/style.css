@@ -1,87 +1,140 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
 
-body{
-    font-family: 'Poppins', sans-serif !important;
+body {
+  font-family: "Poppins", sans-serif !important;
 }
-:root{
-    --white:"#fff";
-
+:root {
+  --white: "#fff";
 }
-
 
 /* custom header code */
 
-.logo-size{
-    height: 56px;
-    width: auto;
+.logo-size {
+  height: 56px;
+  width: auto;
 }
-.logo-size img{
-    height: 100%;
-    width: auto;
+.logo-size img {
+  height: 100%;
+  width: auto;
 }
-/* custom header code */ 
+/* custom header code */
 
+/* custom bootstrap header code */
 
-/* custom bootstrap header code */ 
+.nav-link {
+  text-transform: uppercase !important;
+}
+.navbar-collapse {
+  flex-grow: 0 !important;
+}
+.sticky-top {
+  background-color: #fff !important;
+}
+/* custom bootstrap header code */
 
-.nav-link{
-    text-transform: uppercase !important;
-}
-.navbar-collapse{
-    flex-grow: 0 !important;
-}
-.sticky-top{
-    background-color: #fff !important;
-}
-/* custom bootstrap header code */ 
+/* slider bootstrap header code */
 
-
-/* slider bootstrap header code */ 
-
-.slider__img--container{
-    width: 100%;
-    height: 70vh;
-    position: relative;
+.slider__img--container {
+  width: 100%;
+  height: 70vh;
+  position: relative;
 }
-.slider__img--container img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
+.slider__img--container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
 }
-.slide-info{
-    background: rgb(0,92,169);
-    background: linear-gradient(90deg, rgba(0,92,169,1) 0%, rgba(153,190,221,1) 100%);
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    z-index: 9999;
-    top: 0;
-    opacity: 75%;
+.slide-info {
+  background: rgb(0, 92, 169);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 92, 169, 1) 0%,
+    rgba(153, 190, 221, 1) 100%
+  );
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 9999;
+  top: 0;
+  opacity: 75%;
 }
-.z-99999{
-    z-index: 99999 !important;
+.z-10 {
+  z-index: 99999999 !important;
 }
-.button-info{
-    position: absolute;
-    top: 50%;
-    z-index: 999999;
-    left: 16%;
-    transform: translate(0,-50%);
-    width: 30%;
+.button-info {
+  position: absolute;
+  top: 50%;
+  z-index: 999999;
+  left: 16%;
+  transform: translate(0, -50%);
+  width: 30%;
 }
-.button-info h2{
-    color: #fff;
-    font-size: 42px;
+.button-info h2 {
+  color: #fff;
+  font-size: 42px;
 }
-.slider-btn{
-    text-decoration: none;
-    background-color: transparent;
-    border: 2px solid #fff;
-    padding: 12px 34px;
-    border-radius: 50px;
-    color: #fff;
-    margin-top: 24px;
-    text-transform: uppercase;
+.slider-btn {
+  text-decoration: none;
+  background-color: transparent;
+  border: 2px solid #fff;
+  padding: 12px 34px;
+  border-radius: 50px;
+  color: #fff;
+  margin-top: 24px;
+  text-transform: uppercase;
 }
-/* slider bootstrap header code */ 
+.left {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -9;
+}
+.right {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -9;
+}
+.img__big {
+  height: 206px;
+  width: 206px;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.img__big img {
+  height: 100%;
+  width: 100%;
+  object-position: center;
+  object-fit: cover;
+}
+.gray__strock {
+  height: 140px;
+  width: 140px;
+  background-color: #fff;
+  border-radius: 50%;
+  border: 2px solid #808285;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.gray__circle {
+  height: 96px;
+  width: 96px;
+  background-color: #808285;
+  border-radius: 50%;
+  /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); */
+}
+.small__img {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.small__img img {
+  height: 100%;
+  width: 100%;
+  object-position: center;
+  object-fit: cover;
+}
+/* slider bootstrap header code */

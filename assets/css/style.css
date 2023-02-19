@@ -62,5 +62,26 @@ body{
 .z-99999{
     z-index: 99999 !important;
 }
-
+.button-info{
+    position: absolute;
+    top: 50%;
+    z-index: 999999;
+    left: 16%;
+    transform: translate(0,-50%);
+    width: 30%;
+}
+.button-info h2{
+    color: #fff;
+    font-size: 42px;
+}
+.slider-btn{
+    text-decoration: none;
+    background-color: transparent;
+    border: 2px solid #fff;
+    padding: 12px 34px;
+    border-radius: 50px;
+    color: #fff;
+    margin-top: 24px;
+    text-transform: uppercase;
+}
 /* slider bootstrap header code */ 

@@ -6,7 +6,15 @@ body {
 :root {
   --white: "#fff";
 }
-
+a{
+  color: #000 !important;
+  border: none !important;
+  text-decoration: none !important;
+}
+ul {
+  list-style-type: none;
+  padding: 0 !important;
+}
 /* custom header code */
 
 .logo-size {
@@ -92,7 +100,7 @@ body {
 }
 .right {
   position: absolute;
-  top: 0;
+  top: 200px;
   right: 0;
   z-index: -9;
 }
@@ -137,4 +145,196 @@ body {
   object-position: center;
   object-fit: cover;
 }
+.carousel-indicators [data-bs-target] {
+  width: 13px !important;
+  height: 13px !important;
+  border-radius: 50% !important;
+}
+.carousel-dark .carousel-indicators [data-bs-target] {
+  background-color: #fff !important;
+}
+.slider-btn__main {
+  text-decoration: none;
+  background-color: #005ca9;
+  border: none;
+  padding: 12px 34px;
+  border-radius: 50px;
+  color: #fff;
+  margin-top: 24px;
+  text-transform: uppercase;
+}
+.section__title {
+  font-size: 40px;
+  font-weight: 600;
+  margin-bottom: 24px;
+}
+.about__text {
+  color: #808285;
+  font-size: 16px;
+}
+.side__img--container {
+  position: relative;
+}
+.gray__strock {
+  position: absolute;
+  top: 2px;
+  left: 220px;
+}
+.gray__circle {
+  position: absolute;
+  top: 220px;
+  left: 100px;
+}
+.small__img {
+  position: absolute;
+  top: 165px;
+  left: 210px;
+}
 /* slider bootstrap header code */
+
+/* why us code */
+
+.why__us {
+  /* The image used */
+  background-image: linear-gradient(
+      90deg,
+      rgba(0, 92, 169, 0.7) 0%,
+      rgba(0, 28, 51, 0.7) 100%
+    ),
+    url("/assets/img/slider-1.jpg");
+
+  /* Set a specific height */
+  min-height: 470px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@supports (background-attachment: fixed)
+{
+    .why__us
+    {
+        background-attachment: fixed;
+    }
+}
+.why__us .section__title {
+  color: #fff;
+}
+.why__us--features {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+.why__img--container {
+  height: 80px;
+  width: 80px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.flex__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: #fff;
+}
+.flex__container h5 {
+  font-size: 1.125rem;
+}
+.flex__container p {
+  font-size: 0.875rem;
+}
+/* why us code */
+
+/* product card */
+.product__card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.product__img--container {
+  width: 186px;
+  aspect-ratio: 1/1;
+  height: auto;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0px -4px 20px -3px rgba(0, 0, 0, 0.1),
+    0px 4px 20px -3px rgba(0, 0, 0, 0.1), 4px 0px 20px -3px rgba(0, 0, 0, 0.1),
+    -4px 0px 20px -3px rgba(0, 0, 0, 0.1);
+}
+.product__img--container img {
+  height: 100%;
+  width: 100%;
+}
+.product__card--info {
+  position: relative;
+  border: 1px solid #717171;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.product_card--name {
+  font-size: 1.125rem;
+  font-weight: 600;
+  background-color: #fff;
+  width: fit-content;
+  position: absolute;
+  top: -10%;
+}
+/* product card */
+
+/* contact__us */
+
+.contact__us {
+  background-image: linear-gradient(
+    90deg,
+    rgba(0, 92, 169, 1) 0%,
+    rgba(0, 28, 51, 1) 100%
+  );
+}
+
+/* contact__us */
+.btn_container{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+.contact__us h6{
+  font-size: .875rem;
+  text-transform: uppercase;
+}
+.contact__us h2{
+  font-size: 1.625rem;
+}
+.contact__us h2, .contact__us h6{
+  color: #fff;
+}
+.footer__logo--container{
+  height: 64px;
+  width: auto;
+}
+.footer__logo--container img{
+  height: 100%;
+  width: auto;
+}
+.footer__bottom{
+  background-color: #F1F1F1;
+}
+p{
+  margin: 0 !important;
+  padding: 0 !important;
+}
+.f-size{
+  font-size: 18px !important;
+}
+.position-top-15{
+  top: -18%;
+}

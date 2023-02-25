@@ -6,7 +6,7 @@ body {
 :root {
   --white: "#fff";
 }
-a{
+a {
   color: #000 !important;
   border: none !important;
   text-decoration: none !important;
@@ -16,7 +16,12 @@ ul {
   padding: 0 !important;
 }
 /* custom header code */
-
+.nav-link{
+  color: #808285 !important;
+}
+.active{
+  color: #000 !important;
+}
 .logo-size {
   height: 56px;
   width: auto;
@@ -24,6 +29,9 @@ ul {
 .logo-size img {
   height: 100%;
   width: auto;
+}
+.add-shadow {
+  box-shadow: 0px 11px 20px -3px rgba(0, 0, 0, 0.1);
 }
 /* custom header code */
 
@@ -80,7 +88,7 @@ ul {
 }
 .button-info h2 {
   color: #fff;
-  font-size: 42px;
+  font-size: 2.625rem;
 }
 .slider-btn {
   text-decoration: none;
@@ -212,12 +220,10 @@ ul {
   background-repeat: no-repeat;
   background-size: cover;
 }
-@supports (background-attachment: fixed)
-{
-    .why__us
-    {
-        background-attachment: fixed;
-    }
+@supports (background-attachment: fixed) {
+  .why__us {
+    background-attachment: fixed;
+  }
 }
 .why__us .section__title {
   color: #fff;
@@ -287,7 +293,8 @@ ul {
   background-color: #fff;
   width: fit-content;
   position: absolute;
-  top: -10%;
+  top: -20%;
+  width: 70%;
 }
 /* product card */
 
@@ -302,39 +309,388 @@ ul {
 }
 
 /* contact__us */
-.btn_container{
+.btn_container {
   display: flex;
   width: 100%;
   justify-content: center;
 }
-.contact__us h6{
-  font-size: .875rem;
+.contact__us h6 {
+  font-size: 0.875rem;
   text-transform: uppercase;
 }
-.contact__us h2{
+.contact__us h2 {
   font-size: 1.625rem;
 }
-.contact__us h2, .contact__us h6{
+.contact__us h2,
+.contact__us h6 {
   color: #fff;
 }
-.footer__logo--container{
+.footer__logo--container {
   height: 64px;
   width: auto;
 }
-.footer__logo--container img{
+.footer__logo--container img {
   height: 100%;
   width: auto;
 }
-.footer__bottom{
-  background-color: #F1F1F1;
+.footer__bottom {
+  background-color: #f1f1f1;
 }
-p{
+footer h5 {
+  font-size: 1.125rem;
+  text-transform: uppercase;
+}
+footer ul {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+footer a {
+  font-size: 0.875rem;
+  color: #808285 !important;
+}
+p {
   margin: 0 !important;
   padding: 0 !important;
 }
-.f-size{
+.f-size {
   font-size: 18px !important;
 }
-.position-top-15{
-  top: -18%;
+.contact__info {
+  display: flex;
+  gap: 16px;
+  align-items: start;
+}
+.contact__info li,.contact__info p {
+  font-size: 0.875rem;
+  color: #808285 !important;
+}
+.contact__info img {
+  margin-top: 3px;
+}
+.location__container p,.footer__bottom p {
+  font-size: 0.875rem;
+  color: #808285 !important;
+}
+ul,
+li {
+  margin: 0 !important;
+}
+.top__title--about{
+  /* The image used */
+  background-image: linear-gradient(
+      90deg,
+      rgba(0, 92, 169, 0.7) 0%,
+      rgba(0, 28, 51, 0.7) 100%
+    ),
+    url("/assets/img/slider-1.jpg");
+
+  /* Set a specific height */
+  min-height: 300px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* flex */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@supports (background-attachment: fixed) {
+  .top__title--about {
+    background-attachment: fixed;
+  }
+}
+.top__title--secondary{
+    /* The image used */
+    background-image: linear-gradient(
+      90deg,
+      rgba(0, 92, 169, 0.7) 0%,
+      rgba(0, 28, 51, 0.7) 100%
+    ),
+    url("/assets/img/slider-1.jpg");
+
+  /* Set a specific height */
+  min-height: 220px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* flex */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+.top__title--about h2, .top__title--secondary h2{
+  color: #fff;
+  font-size: 2.625rem;
+  width: 70%;
+}
+.top__title--secondary h2{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  z-index: 2;
+  text-align: center;
+}
+.blue-box{
+  width: 740px;
+  height: 740px;
+  background-color: #005ca9;
+  position: absolute;
+  bottom: -40px;
+  left: 20%;
+  border-radius: 41px;
+  z-index: 1;
+  transform: rotate(60deg);
+}
+.black-box{
+  width: 460px;
+  height: 460px;
+  background-color: #000;
+  position: absolute;
+  bottom: -40px;
+  left: 40%;
+  border-radius: 31px;
+  transform: rotate(60deg);
+}
+.who__img--box{
+  position: relative;
+}
+.who__img--container{
+  width: 90%;
+  aspect-ratio: 16/9;
+  height: auto;
+  overflow: hidden;
+  border-radius: 12px;
+  margin-left: 10px;
+}
+.who__img--container img{
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+.who__img--bg{
+  width: 90%;
+  height: auto;
+  aspect-ratio: 16/9;
+  background-color: #F1F1F1;
+  position: absolute;
+  bottom: -10px;
+  z-index: -9;
+  border-radius: 12px;
+}
+.about__section--title{
+  font-size: 2.25rem;
+  color: #005ca9;
+  font-weight: 600;
+}
+.about__section--description{
+  color: #808285;
+}
+.manufacture__img--container{
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1/1;
+  border-radius: 6px;
+  overflow: hidden;
+}
+.manufacture__img--container img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  transition: all 1.5s;
+}
+.manufacture__img--container img:hover{
+  transform: scale(1.2);
+  font-family:Arial, Helvetica, sans-serif
+}
+
+
+/* img model */
+.img__popup{
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.9);
+  z-index: 999999999;
+  height: 100%;
+  width: 100%;
+  display: none;
+}
+.img__popup span{
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  color: #fff;
+  font-size: 24px;
+  cursor: pointer;
+}
+.img__popup img{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: auto;
+  height: 90%;
+}
+
+.category__container{
+  border: #005ca9 1px solid;
+  border-radius: 6px;
+}
+.category__title{
+  background-color: #005ca9;
+  border-radius: 3px;
+  color: #fff;
+}
+.category__lists--container a{
+  color: #464646 !important;
+  font-size: 14px;
+}
+.category__lists--container li{
+  padding-bottom: 6px;
+}
+.category__lists--container li:last-child{
+  padding-bottom: 0;
+}
+.details__img--container{
+  width: 90%;
+  height: auto;
+  aspect-ratio: 1/1;
+  /* overflow: hidden; */
+}
+.details__img--container img{
+  width: 100%;
+  height: 100%;
+}
+.product__img--others{
+  display: flex;
+  gap: 0 16px;
+  align-items: center;
+}
+.other__img--container{
+  height: 86px;
+  width: 86px;
+  aspect-ratio: 1/1;
+}
+.other__img--container img{
+  height: 100%;
+  width: 100%;
+}
+.active-img{
+  border: 1px solid #8A8A8A;
+  padding: 2px;
+}
+.product__details--title{
+  font-size: 2.5rem;
+  color: #005ca9;
+  font-weight: 600;
+}
+.product__details--subtitle{
+  color: #808285;
+}
+.details__title{
+  border-bottom: 1px solid #808285;
+  padding-bottom: 6px;
+  width: fit-content;
+}
+.product__details--infos li{
+  list-style-type: disc;
+  list-style-position: inside;
+}
+.product__details--spec{
+  border: 1px solid #808285;
+  width: 80%;
+  border-radius: 6px;
+  overflow: hidden;
+}
+.product__spec--btns{
+  display: flex;
+  width: 100%;
+}
+.btn-toggle{
+  padding: 20px 0;
+  width: 50%;
+  background-color: transparent;
+  border: none;
+}
+.btn-active{
+  background-color: #005ca9 !important;
+  color: #fff;
+  border: 1px solid #005ca9;
+}
+.product__details--info li{
+  list-style-type: disc;
+  list-style-position: inside;
+}
+/* responsive design */
+/* tab */
+@media (max-width: 1080px){
+  .product_card--name{
+    font-size: 16px;
+  }
+}
+@media (max-width: 768px){
+  .img__popup img{
+    width: 90%;
+    height: auto;
+  }
+  .details__img--container{
+    width: 100%;
+  }
+  .product__details--spec{
+    width: 100%;
+  }
+  .product__details--title{
+    font-size: 1.8rem;
+  }
+}
+/* mobile */
+@media (max-width: 640px){
+  .button-info{
+    width: 80%;
+    left: 5%;
+  }
+  .button-info h2{
+    font-size: 24px;
+  }
+  .slider-btn{
+    padding: 8px 24px;
+    font-size: 14px;
+  }
+  .img__big{
+    height: 180px;
+    width: 180px;
+  }
+  .gray__strock{
+    left: 196px;
+  }
+  .gray__circle{
+    top: 182px;
+    left: 76px;
+  }
+  .small__img{
+    top: 152px;
+    left: 180px;
+  }
+  .side__img--container{
+    height: 334px;
+  }
+  .top__title--about{
+    height: 80px;
+  }
+  .top__title--about h2,.top__title--secondary h2{
+    font-size: 1.25rem;
+    width: 90%;
+  }
 }

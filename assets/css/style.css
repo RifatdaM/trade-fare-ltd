@@ -633,6 +633,20 @@ li {
   list-style-type: disc;
   list-style-position: inside;
 }
+.construction__img--container{
+  width: 80%;
+  height: auto;
+  margin: auto;
+}
+.construction__img--container img{
+  width: 100%;
+  height: auto;
+}
+.construction__title{
+  color: #005ca9;
+  font-weight: bold;
+  text-transform: capitalize;
+}
 /* responsive design */
 /* tab */
 @media (max-width: 1080px){
